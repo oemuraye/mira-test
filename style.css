@@ -1,0 +1,120 @@
+:root {
+  --basic-blue: #021d43;
+  --icon-red: #ff2424;
+  --icon-green: #05d246;
+  --white-color: #fff;
+  --dark-color: #000;
+}
+* {
+  box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+}
+.body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  max-width: 750px;
+}
+button {
+  cursor: pointer;
+}
+input,
+button {
+  font: 1rem helvetica;
+  padding: 10px;
+  border: 0.1rem #808080 solid;
+  border-radius: 0.5rem;
+}
+form button {
+    background-color: #f0c040;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--basic-blue);
+}
+button.update-button {
+    background-color: var(--icon-green);
+}
+form button:hover {
+  border: 0.12rem #404040 solid;
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+form label {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--basic-blue);
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
+.form-items {
+  display: flex;
+  flex-direction: column;
+  width: 32rem;
+  padding: 2rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: 0.5rem;
+  list-style-type: none;
+}
+.form-items li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.form-container h1 {
+  font-size: 2.5rem;
+}
+input:invalid {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+
+/* User Table */
+table {
+  width: 100%;
+}
+th {
+  text-align: left;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+td {
+  padding: 0.5rem;
+}
+.tr-action {
+  width: 10rem;
+}
+table button {
+  font-size: 14px;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+}
+.delete-button {
+    border: 1px solid var(--icon-red);
+}
+.edit-button {
+    border: 1px solid var(--icon-green);
+
+}
+button.delete-button:hover,
+button.edit-button:hover {
+  transform: scale(0.98);
+}
+
+#id-num {
+    margin: 10px;
+}
+#id-num > input {
+  width: 20%;
+  border-radius: 0;
+  padding: 2px;
+}
+.hide {
+    display: none;
+}
