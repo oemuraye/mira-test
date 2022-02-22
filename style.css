@@ -51,11 +51,9 @@ header a:hover {
 }
 
 /* Form */
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100%;
+form {
+  margin-bottom: 50px;
+  width: 100px;
 }
 form label {
   font-weight: 700;
@@ -67,7 +65,7 @@ form label {
 .form-items {
   display: flex;
   flex-direction: column;
-  width: 32rem;
+  width: 23rem;
   padding: 2rem;
   border: 0.1rem #c0c0c0 solid;
   border-radius: 0.5rem;
@@ -79,9 +77,6 @@ form label {
   margin-bottom: 5px;
   margin-top: 5px;
 }
-.form-container h1 {
-  font-size: 2.5rem;
-}
 input:invalid {
   background-image: linear-gradient(to right, pink, lightgreen);
 }
@@ -89,9 +84,11 @@ input:invalid {
 /* User Table */
 table {
   width: 100%;
+  overflow-x: scroll;
 }
 th {
   text-align: left;
+  padding: 5px;
 }
 tbody > tr:nth-child(odd) {
   background-color: #f0f0f0;
