@@ -10,7 +10,7 @@
 }
 body {
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 1200px;
   padding: 20px;
 }
@@ -25,13 +25,13 @@ button {
   border-radius: 0.5rem;
 }
 form button {
-    background-color: #f0c040;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--basic-blue);
+  background-color: #f0c040;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--basic-blue);
 }
 button.update-button {
-    background-color: var(--icon-green);
+  background-color: var(--icon-green);
 }
 form button:hover {
   border: 0.12rem #404040 solid;
@@ -65,7 +65,7 @@ form label {
 .form-items {
   display: flex;
   flex-direction: column;
-  width: 23rem;
+  width: 20rem;
   padding: 2rem;
   border: 0.1rem #c0c0c0 solid;
   border-radius: 0.5rem;
@@ -84,8 +84,8 @@ input:invalid {
 /* User Table */
 table {
   width: 100%;
-  overflow-x: scroll;
 }
+
 th {
   text-align: left;
   padding: 5px;
@@ -105,11 +105,10 @@ table button {
   margin-bottom: 10px;
 }
 .delete-button {
-    border: 1px solid var(--icon-red);
+  border: 1px solid var(--icon-red);
 }
 .edit-button {
-    border: 1px solid var(--icon-green);
-
+  border: 1px solid var(--icon-green);
 }
 button.delete-button:hover,
 button.edit-button:hover {
@@ -117,7 +116,7 @@ button.edit-button:hover {
 }
 
 #id-num {
-    margin: 10px;
+  margin: 10px;
 }
 #id-num > input {
   width: 20%;
@@ -125,9 +124,18 @@ button.edit-button:hover {
   padding: 2px;
 }
 .hide {
-    display: none;
+  display: none;
 }
 
 canvas {
   height: 80vh !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-items {
+    margin: 0;
+  }
+  .table {
+    overflow-x: scroll;
+  }
 }
