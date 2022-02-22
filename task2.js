@@ -6,7 +6,7 @@ const getYearOfAward = async () => {
       method: "GET",
       headers: {
         "x-rapidapi-host": "data-imdb1.p.rapidapi.com",
-        "x-rapidapi-key": "x-rapidapi-key",
+        "x-rapidapi-key": "57fdebf6bdmsh259ac94e708cea9p12f3ebjsndad1aa34401b",
       },
     }
   );
