@@ -1,15 +1,15 @@
 
-const getYearofAward = async () => {
+const getYearOfAward = async () => {
   const response = fetch(
     "https://data-imdb1.p.rapidapi.com/actor/id/nm0000199/awards/?page_size=50",
     {
       method: "GET",
       headers: {
         "x-rapidapi-host": "data-imdb1.p.rapidapi.com",
-        "x-rapidapi-key": "57fdebf6bdmsh259ac94e708cea9p12f3ebjsndad1aa34401b",
+        "x-rapidapi-key": "x-rapidapi-key",
       },
     }
-  )
+  );
   const data = await (await response).json()
 
   //     for(let i = 0; i< awards.length; i++){
@@ -20,10 +20,10 @@ const getYearofAward = async () => {
   return years
 };
 
-getYearofAward();
+getYearOfAward();
 
 const getCount = async () => {
-    const years = await getYearofAward()
+    const years = await getYearOfAward()
 
     // Creating Hashtable for Year and it frequency
     const yearOccurrence = {}
@@ -52,7 +52,7 @@ yearOccurrence.then((result) => {
       labels: labels,
       datasets: [
         {
-          label: "Names Award",
+          label: "Award Stats",
           backgroundColor: "rgb(255, 99, 132)",
           borderColor: "rgb(255, 99, 132)",
           data: counts,
