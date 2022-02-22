@@ -126,8 +126,8 @@ usersTableList.addEventListener('click', async (e) => {
       method: "DELETE",
     })
       .then((response) => response.json())
-      .then((json) => console.log(json + 'deleted'))
-      .then(() => location.reload())
+      .then(() => location.reload());
+      alert("Data Created")
     }
   })
 
@@ -148,3 +148,9 @@ usersTableList.addEventListener('click', async (e) => {
       .then((response) => response.json())
       .then((json) => console.log(json));
   };
+
+
+
+
+
+
