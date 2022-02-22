@@ -2,8 +2,6 @@
   --basic-blue: #021d43;
   --icon-red: #ff2424;
   --icon-green: #05d246;
-  --white-color: #fff;
-  --dark-color: #000;
 }
 * {
   box-sizing: border-box;
@@ -14,6 +12,7 @@ body {
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
   max-width: 1200px;
+  padding: 20px;
 }
 button {
   cursor: pointer;
